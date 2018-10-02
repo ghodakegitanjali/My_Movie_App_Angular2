@@ -1,0 +1,80 @@
+/* HeroesComponent's private CSS styles */
+.movies {
+  margin: 0 0 3em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 20em;
+}
+.movies li {
+  position: left;
+  cursor: pointer;
+  padding: .3em 0;
+  height: 1.5em;
+  border-radius: 4px;
+  background-color: rgb(230, 221, 196);
+  margin: .1em;
+  
+}
+
+.movies li:hover {
+  color: rgb(234, 154, 236);
+  background-color: rgb(204, 137, 137);
+  left: .1em;
+}
+
+.movies a {
+  color: rgb(26, 17, 7);
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  width: 250px;
+}
+
+.movies a:hover {
+  color:rgb(99, 6, 6);
+}
+
+.movies .Mlist {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: rgb(187, 219, 135);
+  line-height: 1em;
+  position: relative;
+  left: -5px;
+  top: -4px;
+  height: 1.8em;
+  min-width: 16px;
+  text-align: center;
+  margin-right: .3em;
+  border-radius: 4px 0 0 4px;
+}
+.movies .delete {
+    position: relative;
+    color: rgb(25, 29, 22);
+    left: 318px;
+    top: -37px;
+
+    background-color: rgb(185, 236, 172);
+    
+
+  }
+ 
+
+
+button  {
+  background-color: burlywood;
+  cursor: pointer;
+  font-family: Arial;
+  border-block-end-color: brown;
+  border-radius: 5px;
+  padding: 5px 15px;
+  
+}
+label {
+  color: black;
+ font-family: Arial;
+ margin-top: 25%;
+}
+

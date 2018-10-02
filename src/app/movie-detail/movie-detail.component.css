@@ -1,0 +1,46 @@
+
+label {
+    display: block;
+    width: 3em;
+    margin: .5em 0;
+    color: rgba(10, 3, 27, 0.705);
+    font-weight: bold;
+  }
+  input {
+    
+    font-size: 1em;
+    padding-left: .4em;
+  
+  }
+  button {
+    margin-top: 50px;
+   
+    margin-left: 150px;
+    margin-right: 50px;
+    font-family: Arial;
+    background-color: rgb(219, 208, 208);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer; cursor: hand;
+    color:black ;
+  }
+  
+  button:hover {
+    background-color: #e9a171;
+  }
+  button:disabled {
+    background-color: rgb(247, 120, 36);
+    color: rgb(231, 211, 24);
+    cursor: auto;
+  }
+  .form-control {
+    width: 190px;
+    height: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    display:list-item;
+    color: black;
+    
+  }
+  

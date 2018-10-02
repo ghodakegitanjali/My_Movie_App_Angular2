@@ -1,0 +1,32 @@
+
+<h2>Movies list</h2>
+
+<ul class="movies">
+  <li *ngFor="let movie of movies">
+    <a routerLink = "/detail/{{movie.id}}">
+    <span class="Mlist">{{movie.id}}</span>{{movie.name}}
+    </a>
+
+    <button class="delete" title="Delete Movie"
+    (click)="delete(movie)">Delete</button>
+  </li>
+
+  </ul>
+
+
+  <div>
+    <label> <strong> Add New Movie: </strong>  
+  
+      <input #moviename />
+    </label>
+    <button (click)="add(moviename.value); moviename.value=''"> Add  </button> 
+  </div>
+  
+
+  
+
+  
+ 
+
+
+

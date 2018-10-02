@@ -1,0 +1,58 @@
+<div *ngIf="movie">
+    <h2>{{ movie.name | uppercase }} Details</h2>
+    <div><span>id: </span>{{ movie.id}}</div>
+    <div>
+      <label>name: 
+        <input [(ngModel)] = "movie.name" type="text" placeholder="name"/>
+     </label>
+      <label>Director:
+        <input [(ngModel)] = "movie.director" type="text" placeholder="Director" />
+      </label>
+
+      <label>Genre:
+        <input [(ngModel)] = "movie.genre"  type="text"placeholder="Genre" />
+      </label>
+
+      <label>Releasedate:
+        <input [(ngModel)] = "movie.releaseDate"  placeholder="ReleaseDate" />
+      </label>
+
+      <div class="form-group">
+        <label for="genre">Genre</label>
+        <select id="genre" name="genre" [(ngModel)]= "genSelected" (ngModelChange)= 'selectedGenre($event)' class="form-control">
+          <option *ngFor="let gen of genre" [value]="gen.id">
+            {{gen.name}}
+          </option>
+        </select>
+      </div>
+      <br>
+      <br>
+      {{selectedGen}}
+      
+      <!-- <select>         
+        <option *ngFor="let genre of movie.gen" value={{movie.selected}} placeholder= "geners" >
+          {{genre}}
+        </option>
+      </select>       -->
+
+      <!-- <div class="input-group" [ngClass]="{'has-success': gen.valid}">
+        <label>Genre:</label>
+        <select class="form-control" id="gen" ngControl="gen" (change)=selectedOption(gen) >                
+          <option *ngFor="let geners of gen" [value]="movie.gen" >{{geners}}</option>
+        </select>
+      </div>
+    </div>         -->
+    
+      
+      <label>Movie Poster:
+        <input [(ngModel)] = "movie.imgPath" [src]= "movie.imgPath" type="image"  placeholder="imgPath"  />
+        
+      </label>
+
+      
+    
+      
+      <button  (click)="goBack()"> Back  </button>
+      <button (click)="save()">save</button>
+    </div>
+    
